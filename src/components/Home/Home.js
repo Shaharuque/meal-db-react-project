@@ -21,8 +21,8 @@ const Home = () => {
     }, [searchText])  //searchText ar value can change so fetched data will be different on different searchText thats why searchText is in the dependency
 
     console.log(result)
-    const searchFood = (e) => {
-        setSearchText(e.target.value)
+    const searchFood = (e) => {//e.target.value means text box a kicho likhley sheita return korey
+        setSearchText(e.target.value)  
     }
 
     return (
@@ -33,7 +33,7 @@ const Home = () => {
             <div className='grid md:grid-cols-3 gap-6 container mx-auto p-8'>
                 {
                     
-                    result.map(food=><SearchedResult key={food.idMeal} food={food}></SearchedResult>)
+                   result?.map(food=><SearchedResult key={food.idMeal} food={food}></SearchedResult>) 
                    
                 }
             </div>
