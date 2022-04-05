@@ -5,6 +5,7 @@ import { Routes, Route } from "react-router-dom";
 import Home from './components/Home/Home';
 import About from './components/About/About'
 import SpecificCategory from './components/Specific_category_food/SpecificCategory';
+import Catagories from './components/Catagories/Catagories';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Route path='/' element={<Home></Home>}></Route>
         <Route path='/home' element={<Home></Home>}></Route>
         <Route path='/specific_category/:category' element={<SpecificCategory></SpecificCategory>}></Route>
+        <Route path='/catagories' element={<Catagories></Catagories>}></Route>
         <Route path='/about' element={<About></About>}></Route>
       </Routes>
     </div>

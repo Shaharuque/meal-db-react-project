@@ -2,7 +2,7 @@ import React from 'react';
 
 const ItemsOfCategory = (props) => {
     const {item}=props
-    const {strMeal,strMealThumb,idMeal}=item
+    const {strMeal,strMealThumb}=item
     return (
         <div className='p-6 border-2 shadow-lg shadow-teal-500 rounded-lg'>
             <div className='flex flex-col items-center'>

@@ -32,7 +32,7 @@ const Home = () => {
             </div>
             <div className='grid md:grid-cols-3 gap-6 container mx-auto p-8'>
                 {
-                    
+                   /*used optional chaining */
                    result?.map(food=><SearchedResult key={food.idMeal} food={food}></SearchedResult>) 
                    
                 }
